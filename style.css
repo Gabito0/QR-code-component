@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Outfit, sans-serif;
+  font-size: 1rem;
+}
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.card {
+  width: min(100%, 300px);
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card figure img {
+  width: min(100%, 300px);
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.card h1 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.card p {
+  font-weight: 400;
+  color: hsl(216, 15%, 48%);
+}
+
+.attribution {
+  display: flex;
+  flex-flow: column;
+  padding-top: 1rem;
+}
+
+.attribution p:nth-child(2) {
+  padding-top: 0.5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(204, 100%, 50%);
+}
+.attribution a:hover {
+  color: hsl(202, 97%, 39%);
+}
+.nowrap {
+  white-space: nowrap;
+}
